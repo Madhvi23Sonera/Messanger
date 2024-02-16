@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Use a common font */
+}
+
+#root {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.__main {
+  max-width: 90%;
+  margin: auto;
+  background: linear-gradient(to right, #ecbeeb, #c79ca2, #e1c7ec, #e6cbbb, #ddb2dc);
+  min-height: 80vh;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Ensure it's a column layout */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h1-and-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #8a2387, #e94057, #913ab9, #f27121, #8a2387);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
+}
+
+.nav {
+  max-width: 100px;
+  padding: 30px 25px 0;
+  margin-left: 20px; /* Adjust the margin as needed */
+  display: inline-block; /* Ensure it stays on the same line */
+}
+
+.nav img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 200px; /* Adjust the width of the logo */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .h1-and-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    margin-left: 0;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+}
+
+
+
+.btn {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 230px; /* Max width to avoid overflow */
+  height: 47px;
+  line-height: 47px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.02);
+  display: flex;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  margin: 10px auto; /* Center the button */
+}
+
+.btn:hover {
+  background-color: #5abbfc;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+.btn i {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  border-right: 1px solid #ebe7fb;
+}
+
+.btn span {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6c84ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #35c4f0;
+}
